@@ -137,7 +137,7 @@ async def show_japanese_translation(message):
         await channel.send(tr)  
         
 
-#覚えた単語をファイルに記録する(、cnt_memorized増やす、unmemorizedから消す.※毎回O(N)だけどN=10^3くらいだから許される)→次の単語に行く
+#覚えた単語をファイルに記録する(、cnt_memorized増やす、unmemorizedから消す.
 @client.event
 async def memorizing_ok(message):
     if unlearned==0:
@@ -222,5 +222,6 @@ async def on_message(message):
 
 #botの起動
 client.run(TOKEN)
+
 
 
